@@ -9,9 +9,10 @@ import pageobject.CertificateVerificationObject;
 
 public class MyStepdefs extends BaseClass {
     static CertificateVerificationObject certificateVerificationObject = PageFactory.initElements(driver, CertificateVerificationObject.class);
+
     @When("Open {string} page")
     public void openPage(String url) {
-      driver.get(url);
+        driver.get(url);
     }
 
     @And("Enter random data of certificate")
@@ -26,7 +27,7 @@ public class MyStepdefs extends BaseClass {
 
     @Then("Find error massage about wrong certificate")
     public void findErrorMassageAboutWrongCertificate() {
-      certificateVerificationObject.isPresentError();
+        certificateVerificationObject.isPresentError();
     }
 
     @And("Close browser")
