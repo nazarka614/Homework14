@@ -41,8 +41,6 @@ public class CertificateVerificationObject extends BaseClass {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-      //  assertTrue("Надпись \"Сертифікат не знайдено\" не присутствует", this.errorMassage.isDisplayed());
-
         assertEquals("Сертифікат не знайдено",errorMassage.getAttribute("innerText"));
         System.out.println(errorMassage.getAttribute("innerText"));
     }
