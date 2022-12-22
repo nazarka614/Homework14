@@ -29,9 +29,4 @@ public class MyStepdefs extends BaseClass {
     public void findErrorMassageAboutWrongCertificate() {
         certificateVerificationObject.isPresentError();
     }
-
-    @And("Close browser")
-    public void closeBrowser() {
-        certificateVerificationObject.closeBrowser();
-    }
 }

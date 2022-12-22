@@ -1,3 +1,4 @@
+@test
 Feature: Certificate Verification
 
   Scenario: Search certificate error massage
@@ -5,4 +6,3 @@ Feature: Certificate Verification
     And Enter random data of certificate
     And Click on Button Verify
     Then Find error massage about wrong certificate
-    And Close browser
