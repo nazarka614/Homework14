@@ -15,17 +15,16 @@ import org.junit.runner.RunWith;
         features = "src/main/java/feature",//path to feature files
         glue = "steps",//package path
         tags = "@test",//list feature files for run
-        dryRun = false
-//        monochrome = true,
-//        publish = true
+        dryRun = false,
+        monochrome = true,
+        publish = true
 )
 
 public class Runner {
     @BeforeClass
     public static void createDriver() {
-        //CUCUMBER_PUBLISH_TOKEN=e4eea66f-07d3-47ca-a200-f12148ca38a3
-      //  System.setProperty("CUCUMBER_PUBLISH_TOKEN", "e4eea66f-07d3-47ca-a200-f12148ca38a3");
-       // BaseClass.driver = DriverConfig.create(BROWSERS.CHROMEINCOGNITO);
+        System.setProperty("CUCUMBER_PUBLISH_TOKEN", "f91c7df6-5365-4f9a-bca1-23a30d23710a");
+        BaseClass.driver = DriverConfig.create(BROWSERS.CHROMEINCOGNITO);
 
     }
 
