@@ -25,7 +25,7 @@ public class CertificateVerificationObject extends BaseClass {
     public void EnterRandomNumberInField() {
         this.searchField.sendKeys(Integer.toString(rnd.nextInt(9999999)));
         try {
-            Thread.sleep(1200);
+            Thread.sleep(1100);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -37,7 +37,7 @@ public class CertificateVerificationObject extends BaseClass {
 
     public void isPresentError() {
         try {
-            Thread.sleep(1700);
+            Thread.sleep(1200);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

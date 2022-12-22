@@ -31,7 +31,7 @@ public class Runner {
     @AfterClass
     public static void after() {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(400);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
