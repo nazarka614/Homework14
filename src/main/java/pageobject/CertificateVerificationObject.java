@@ -19,7 +19,7 @@ public class CertificateVerificationObject extends BaseClass {
     @FindBy(xpath = "//button[@type = 'submit' and contains(@class, \"certificate-check_submit\")]")
     WebElement button;
 
-    @FindBy(xpath = "//*[@class=\"certificate-check_message\"]")
+    @FindBy(xpath = "//p[@class=\"certificate-check_message\"]")
     WebElement errorMassage;
 
     public void EnterRandomNumberInField() {
@@ -41,8 +41,8 @@ public class CertificateVerificationObject extends BaseClass {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        assertEquals("Сертифікат не знайдено",errorMassage.getAttribute("innerText"));
-        System.out.println(errorMassage.getAttribute("innerText"));
+        assertEquals("Сертифікат не знайдено", errorMassage.getText());
+        System.out.println(errorMassage.getText());
     }
 
     public void closeBrowser() {
